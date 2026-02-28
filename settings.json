@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jj commit -m 'session end' -R .claude 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
